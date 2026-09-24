@@ -17,7 +17,9 @@
 
     <h2>Contact Me</h2>
 
-    <form>
+    <form id="contactForm">
+
+      
         <label for="name">Your Name:</label>
         <input type="text" id="name" name="name">
        
@@ -31,6 +33,14 @@
         <input type="submit" value="Submit">
 
     </form>
+
+    <p id="formMessage"></p>
+    <button id="infoButton">Show Message</button>
+    <p id="infoMessage" style="display: none;">
+    Thanks for visiting my web application!
+</p>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
