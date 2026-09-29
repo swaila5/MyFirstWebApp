@@ -19,9 +19,16 @@ const infoMessage = document.getElementById("infoMessage");
 infoButton.addEventListener("click", function() {
     if (infoMessage.style.display === "none") {
         infoMessage.style.display = "block";
+        infoMessage.style.color= "blue";
+        infoMessage.innerHTML = "Welcome to my website!";
+        infoMessage.style.fontSize = "30px";
+        infoMessage.style.backgroundColor = "yellow";
+        infoMessage.style.fontWeight = "bold";
         infoButton.innerHTML = "Hide Message";
+        infoButton.style.backgroundColor = "blue";
     } else {
         infoMessage.style.display = "none";
         infoButton.innerHTML = "Show Message";
+        infoButton.style.backgroundColor ="";
     }
 });
