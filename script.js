@@ -32,3 +32,12 @@ infoButton.addEventListener("click", function() {
         infoButton.style.backgroundColor ="";
     }
 });
+
+const duckButton = document.getElementById("duckButton");
+const duckImage = document.getElementById("duckImage");
+const duckMessage = document.getElementById("duckMessage");
+
+duckButton.addEventListener("click", function() {
+    duckImage.src = "https://random-d.uk/api/randomimg?random=" + Date.now();
+    duckMessage.innerHTML = "Here is your random duck!";
+});
