@@ -4,11 +4,18 @@
     <title>About Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 </head>
+
 <body>
 
     <h1 title ="A little about me">About Me</h1>
-    <p>My name is Emmanuel. I am a student and I am learning about web technologies.</p>
+    <p id="introduction">My name is Emmanuel. I am a student and I am learning about web technologies.</p>
+
+    <button id="toggleIntroduction">Show/Hide Introduction</button>
+    <button id="changeIntroductionColour">Change Text Colour</button>
 
     <h2>Things I Enjoy</h2>
     <p>I enjoy learning new things and improving my computer skills.</p>
@@ -51,6 +58,18 @@
 <p id="duckMessage"></p>
 
 <script src="script.js"></script>
+
+
+<script>
+    $("#toggleIntroduction").click(function() {
+        $("#introduction").toggle();
+    });
+
+    $("#changeIntroductionColour").click(function() {
+        $("#introduction").css("color", "blue");
+    });
+</script>
+
 
 </body>
 </html>
