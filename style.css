@@ -1,16 +1,85 @@
+
 body {
-    background-color: lightblue;
+    background-color: #dbeaf1;
+    color: #1d1a45;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 20px;
 }
 
 h1 {
-    color: blue;
+    color: #1d1a45;
     text-align: center;
 }
 
 h2 {
-    color: green;
+    color: #1d1a45;
 }
 
 p {
     font-size: 18px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #1d1a45;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f33535;
+}
+
+
+#filmResults {
+    margin-top: 20px;
+}
+
+#filmResults article {
+    background-color: white;
+    border: 1px solid #1d1a45;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#filmResults h3 {
+    color: #1d1a45;
+    margin-top: 0;
+}
+
+#filmTitle {
+    padding: 10px;
+    border: 1px solid #1d1a45;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+
+/* Mobile-friendly layout */
+* {
+    box-sizing: border-box;
+}
+
+#filmTitle {
+    width: 100%;
+    max-width: 400px;
+}
+
+#filmResults article {
+    overflow-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    overflow-x: hidden;
 }
